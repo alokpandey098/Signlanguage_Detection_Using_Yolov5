@@ -15,8 +15,8 @@ class DataIngestion:
             self.data_ingestion_config = data_ingestion_config
         except Exception as e:
            raise SignException(e, sys)
-        
-    
+
+
 
     def download_data(self)-> str:
         '''
@@ -36,9 +36,9 @@ class DataIngestion:
 
         except Exception as e:
             raise SignException(e, sys)
-        
 
-    
+
+
 
     def extract_zip_file(self,zip_file_path: str)-> str:
         """
@@ -57,7 +57,7 @@ class DataIngestion:
 
         except Exception as e:
             raise SignException(e, sys)
-        
+
 
 
     def initiate_data_ingestion(self)-> DataIngestionArtifact:
